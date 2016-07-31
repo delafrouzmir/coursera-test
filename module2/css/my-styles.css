@@ -119,6 +119,11 @@
 	}
 }
 
+* {
+	box-sizing: border-box;
+	font-family: "Comic Sans MS", sans-serif;
+}
+
 .container {
 	margin: 15px;
 }
@@ -129,14 +134,14 @@
 
 .column {
 	float: left;
-	box-sizing: border-box;
 }
 
 .content{
 	margin: 15px;
 	padding: 15px;
 	background-color: #9CDAFF;
-	height: 150px;
+	border: 1px solid black;
+	height: 300px;
 	overflow: auto;
 }
 
@@ -145,13 +150,13 @@ p.title {
 
 	margin: 0px 0px 10px 0px;
 	width: 100px;
-	height: 20px;
+	height: 35px;
 	border: 1px solid black;
 
 	text-align: center;
-	font-weight: 500;
-	font-size: 120%;
-	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 125%;
+	color: white;
 }
 
 p.description {
@@ -159,4 +164,31 @@ p.description {
 	margin: 15px 0px 15px 0px;
 	text-align: justify;
 	overflow: auto;
+}
+
+.googleTitle{
+	background-color: #D50F25;
+}
+.google {
+	background-color: #FDE3E6;
+}
+
+.twitterTitle{
+	background-color: #00ACED;
+}
+.twitter {
+	background-color: #D9F4FF;
+}
+
+.facebookTitle{
+	background-color: #3B5998;
+}
+.facebook {
+	background-color: #E2E8F3;
+}
+
+h1 {
+	font-size: 175%;
+	text-align: center;
+	text-shadow: currentColor;
 }
