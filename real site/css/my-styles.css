@@ -63,8 +63,28 @@ body{
 	vertical-align: middle;
 }
 
-/* Kustice League image*/
+/* Justice League image*/
 img.resize{
 	height: 20px;
 	width: 20px;
+}
+
+
+/* Menu Items */
+#nav-list{
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+
+#nav-list a:hover {
+	color: grey;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #000000;
 }
