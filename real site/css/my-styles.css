@@ -6,7 +6,12 @@ body{
 	font-family: sans-serif;
 }
 
-/* HEADER */
+/* 	------
+	------
+	HEADER
+	------
+	--- */
+
 #header-nav{
 	border-radius: 0px;
 	border: 0px;
@@ -32,15 +37,14 @@ body{
 
 /* THE NAME OF THE BRAND*/
 .navbar-brand {
-	padding: 20px 0px 20px 10px;
-	max-width: 220px;
+	padding: 10px 0px 20px 10px;
 	margin: 0px;
 }
 
 .navbar-brand h1 {
 	font-family: 'Lora', serif;
 	color: black;
-	font-size: 1.5em;
+	font-size: 3.3vw;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #7F7F7F;
@@ -87,4 +91,70 @@ img.resize{
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
 	border: 1px solid #000000;
+}
+
+/* 	----------------
+	----------------
+	HEADER ENDS HERE
+	----------------
+	------------- */
+
+/* 	------------------------
+	------------------------
+	MAIN CONTENT STARTS HERE
+	------------------------
+	--------------------- */
+.container .jumbotron{
+	padding: 0px;
+	border-radius: 0px;
+}
+
+/* 	------------------
+	------------------
+	MEDIA QUERIES HERE
+	------------------
+	--------------- */
+
+/*	Large devices*/
+@media (min-width: 1200px){
+	.container .jumbotron{
+		background-image: url('../images/gotham-lg.jpg');
+		background-repeat: no-repeat;
+		height: 646px;
+	}
+}
+
+/*	Medium devices */
+@media (max-width: 1199px) and (min-width: 992px){
+	.container .jumbotron{
+		background-image: url('../images/gotham-md.jpg');
+		background-repeat: no-repeat;
+		height: 534px;
+	}
+}
+
+/*	Small devices*/
+@media (max-width: 991px) and (min-width: 768px){
+	.navbar-brand {
+		padding-top: 0px;
+	}
+	.navbar-brand h1, .navbar-brand p {
+		margin-left: 20px;
+	}
+
+	.container .jumbotron{
+		background-image: url('../images/gotham-sm.jpg');
+		background-repeat: no-repeat;
+		height: 421px;
+	}
+}
+
+/*	Extra small devices*/
+@media (max-width: 767px){
+	.navbar-brand {
+		padding-top: 0px;
+	}
+	.navbar-brand h1, .navbar-brand p {
+		margin-left: 20px;
+	}
 }
